@@ -17,7 +17,7 @@
 
       &:hover {
         padding: 20%;
-        background-color: whitesmoke;
+        background-color: rgb(220,26,40);
         color: black;
         border-radius: 8px;
       }
@@ -28,4 +28,12 @@
     width: 200px;
     height: 80px;
   }
+}
+
+button{
+
+  padding: 0.5% 1%;
+  background-color: rgb(220,26,40);
+  border-radius: 8%;
+  
 }
