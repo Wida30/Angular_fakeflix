@@ -1,8 +1,10 @@
 <nav class="nav">
     <img src="{{navigator.img.src}}" alt="{{navigator.img.alt}}">
-    <ul *ngFor="let link of navigator.links">
-        <li>
+    <ul >
+        <li *ngFor="let link of navigator.links">
             <a href="{{link.link}}">{{link.text}}</a>
         </li>
     </ul>
+
+    <button (click) = cambioModo()>{{modo}}</button>
 </nav>
