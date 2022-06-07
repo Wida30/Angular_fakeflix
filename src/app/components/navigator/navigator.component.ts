@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigator.component.scss'],
 })
 export class NavigatorComponent implements OnInit {
-
-  public modo: string  = "☀";
+  public modo: string = '🌙';
 
   public navigator!: navigatorInterface;
 
@@ -34,7 +33,11 @@ export class NavigatorComponent implements OnInit {
   ngOnInit(): void {}
 
   public cambioModo = () => {
-
-  }
-
+    document.body.classList.toggle('noche');
+    if (this.modo == '☀') {
+      this.modo = '🌙';
+    } else {
+      this.modo = '☀';
+    }
+  };
 }
