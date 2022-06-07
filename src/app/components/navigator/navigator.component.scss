@@ -1,15 +1,31 @@
-.nav{
-    height: 15vh;
+.nav {
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+
+  ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
+    gap: 55%;
+    margin-right: 5%;
 
-    img{
-        width: 200px;
-        height: 80px
-        
-    };
+    a {
+      text-transform: uppercase;
 
+      &:hover {
+        padding: 20%;
+        background-color: whitesmoke;
+        color: black;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  img {
+    width: 200px;
+    height: 80px;
+  }
 }

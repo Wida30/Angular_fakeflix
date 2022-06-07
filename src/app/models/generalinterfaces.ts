@@ -1,4 +1,5 @@
 
+
 export interface navigatorInterface {
     img: imageInterface,
     links: linkInterface[],
@@ -17,4 +18,21 @@ export interface linkInterface {
 export interface entertainmentInterface {
     title:string,
     img:imageInterface[],
+}
+
+export interface toptInterface {
+    title:string
+    number:number[],
+    img:imageInterface[],
+}
+
+export interface imagenmasnuero {
+    number: number,
+    src: string,
+    alt: string,
+}
+
+export interface toptInterfaceDos {
+    title:string,
+    img: imagenmasnuero[],
 }

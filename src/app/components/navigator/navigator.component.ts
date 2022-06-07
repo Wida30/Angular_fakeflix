@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigator.component.scss'],
 })
 export class NavigatorComponent implements OnInit {
+
+  public modo: string  = "☀";
+
   public navigator!: navigatorInterface;
 
   constructor() {
@@ -29,4 +32,9 @@ export class NavigatorComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  public cambioModo = () => {
+
+  }
+
 }
