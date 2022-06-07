@@ -1,0 +1,9 @@
+
+<section class="topList">
+    <h2>{{topList.title}}</h2>
+    <ul>
+        <li *ngFor="let moreview of topList.img">
+            <img src="{{moreview.src}}" alt="{{moreview.alt}}">
+        </li>
+    </ul>
+</section>

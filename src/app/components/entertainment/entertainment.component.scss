@@ -1,0 +1,25 @@
+.entertainment {
+  padding: 2%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1%;
+
+    img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+    }
+  }
+  @media screen and (max-width: 785) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

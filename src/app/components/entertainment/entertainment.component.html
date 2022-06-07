@@ -1,0 +1,10 @@
+
+
+<section class="entertainment">
+    <h2>{{entertainment.title}}</h2>
+    <ul>
+        <li *ngFor="let pelicula of entertainment.img">
+            <img src="{{pelicula.src}}" alt="{{pelicula.alt}}">
+        </li>
+    </ul>
+</section>
